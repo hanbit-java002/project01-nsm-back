@@ -6,15 +6,15 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import kr.co.pensionpick.dao.ThemeovDAO;
+import kr.co.pensionpick.dao.ThemewsDAO;
 
 @Service
-public class ThemeovService {
+public class ThemewsService {
 
 	@Autowired
-	private ThemeovDAO themeovDAO;
+	private ThemewsDAO themewsDAO;
 	
-	public List<Map<String, Object>> getThemeov() {
-		return themeovDAO.selectAll();
+	public List<Map<String, Object>> getThemews() {
+		return themewsDAO.selectAll();
 	}
 }
